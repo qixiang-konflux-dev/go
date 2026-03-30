@@ -16,7 +16,7 @@ COPY main.go main.go
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -o go-simple-server .
 
 # Runtime stage
-FROM registry.access.redhat.com/ubi9/ubi-minimal:latest@sha256:34880b64c07f28f64d95737f82f891516de9a3b43583f39970f7bf8e4cfa48b7
+FROM quay.io/redhat-user-workloads/qwan-tenant/ubi@sha256:2617a48f1f4776ae3ba2e03efe7d64868163578547eeee0296892fa89d980132
 
 WORKDIR /
 
