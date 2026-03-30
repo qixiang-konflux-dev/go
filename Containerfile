@@ -16,7 +16,7 @@ COPY main.go main.go
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -o go-simple-server .
 
 # Runtime stage
-FROM quay.io/redhat-user-workloads/qwan-tenant/ubi@sha256:2617a48f1f4776ae3ba2e03efe7d64868163578547eeee0296892fa89d980132
+FROM quay.io/redhat-user-workloads/qwan-tenant/ubi@sha256:b170c6f0987dfe1c3dad18bc696afdcf6fa3eb7c65a5a48357ee541496251036
 
 WORKDIR /
 
